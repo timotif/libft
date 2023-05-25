@@ -6,7 +6,7 @@
 #    By: tfregni <tfregni@student.42berlin.de>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/06 16:50:23 by tfregni           #+#    #+#              #
-#    Updated: 2023/05/25 10:23:50 by tfregni          ###   ########.fr        #
+#    Updated: 2023/05/25 10:33:55 by tfregni          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,11 +47,18 @@ NAME	= libft.a
 
 RM		= rm -f
 
+MAKE	= make -s
+
 all		: ${NAME}
 
+%.o: %.c
+	@$(CC) $(CFLAGS) -c $< -o $@
+
 ${NAME}: ${OBJS} ${OBJS_BNS} ${OBJS_EXTRA}
-	${AR} ${NAME} ${OBJS} ${OBJS_BNS} ${OBJS_EXTRA}
-	${LIB} ${NAME}
+	@printf "Building libft... "
+	@${AR} ${NAME} ${OBJS} ${OBJS_BNS} ${OBJS_EXTRA}
+	@${LIB} ${NAME}
+	@printf "done\n"
 
 bonus	: ${NAME} ${OBJS_BNS}
 	${AR} ${NAME} ${OBJS_BNS}
@@ -63,12 +70,16 @@ extra	: bonus ${OBJS_EXTRA}
 
 clean	:
 ifneq ("$(wildcard  ${OBJS} ${OBJS_BNS} ${OBJS_EXTRA})", "")
-	${RM} ${OBJS} ${OBJS_BNS} ${OBJS_EXTRA}
+	@printf "Cleaning up libft objects... "
+	@${RM} ${OBJS} ${OBJS_BNS} ${OBJS_EXTRA}
+	@echo "done"
 endif
 
 fclean	: clean
 ifneq ("$(wildcard ${NAME})", "")
-	${RM} ${NAME}
+	@printf "Cleaning up libft executable... "
+	@${RM} ${NAME}
+	@echo "done"
 endif
 
 re		: fclean all
