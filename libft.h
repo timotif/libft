@@ -6,7 +6,7 @@
 /*   By: tfregni <tfregni@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/28 14:02:27 by tfregni           #+#    #+#             */
-/*   Updated: 2023/05/06 16:46:51 by tfregni          ###   ########.fr       */
+/*   Updated: 2023/05/25 10:23:35 by tfregni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,6 +96,7 @@ int				ft_isspace(char x);
 uint64_t		ft_atollu(const char *str);
 double			ft_atof(const char *s);
 int				ft_isfloat(char *n);
+char			**ft_split_by_sep(char const *s, char *sep);
 
 /*
  * Dynamic array that can automatically expand when necessary
