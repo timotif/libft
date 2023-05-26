@@ -6,7 +6,7 @@
 #    By: tfregni <tfregni@student.42berlin.de>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/06 16:50:23 by tfregni           #+#    #+#              #
-#    Updated: 2023/05/25 10:33:55 by tfregni          ###   ########.fr        #
+#    Updated: 2023/05/26 21:08:57 by tfregni          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,8 @@ SRCS		=	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strl
 SRCS_BNS	=	ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c ft_lstlast_bonus.c \
 				ft_lstadd_back_bonus.c ft_lstdelone_bonus.c ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c
 
-SRCS_EXTRA	=	$(addprefix ./ft_printf/, ft_printf.c parse_argument.c parse_flag.c parse_num.c parse_ptr.c parse_text.c padding.c print_num.c print_ptr.c print_text.c)\
+SRCS_EXTRA	=	$(addprefix ./ft_printf/, ft_printf.c parse_argument.c parse_flag.c parse_num.c \
+				parse_ptr.c parse_text.c padding.c print_num.c print_ptr.c print_text.c)\
 				$(addprefix ./get_next_line/, get_next_line.c get_next_line_utils.c)\
 				ft_mergesort.c ft_mergesort_des.c ft_abs.c ft_power.c ft_strcmp.c \
 				ft_dyn_arr_new.c ft_dyn_arr_pushback.c ft_dyn_arr_clear.c ft_dyn_arr_erase.c \

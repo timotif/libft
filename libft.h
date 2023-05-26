@@ -6,7 +6,7 @@
 /*   By: tfregni <tfregni@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/28 14:02:27 by tfregni           #+#    #+#             */
-/*   Updated: 2023/05/25 10:23:35 by tfregni          ###   ########.fr       */
+/*   Updated: 2023/05/26 21:09:35 by tfregni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdint.h>
+# include "./ft_printf/ft_printf.h"
 # include "./get_next_line/get_next_line.h"
 
 // Part1
