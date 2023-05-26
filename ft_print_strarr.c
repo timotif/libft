@@ -6,11 +6,12 @@
 /*   By: tfregni <tfregni@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 13:38:49 by tfregni           #+#    #+#             */
-/*   Updated: 2023/02/01 13:39:10 by tfregni          ###   ########.fr       */
+/*   Updated: 2023/05/26 09:37:00 by tfregni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 void	ft_print_strarr(char **arr)
 {
@@ -18,5 +19,5 @@ void	ft_print_strarr(char **arr)
 
 	i = 0;
 	while (arr[i])
-		ft_printf("%s\n", arr[i++]);
+		printf("%s$\n", arr[i++]);
 }

@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split_by_str.c                                  :+:      :+:    :+:   */
+/*   ft_split_by_sep.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tfregni <tfregni@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/28 17:57:28 by tfregni           #+#    #+#             */
-/*   Updated: 2023/05/25 10:23:16 by tfregni          ###   ########.fr       */
+/*   Updated: 2023/05/26 09:36:53 by tfregni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	count_words(const char *s, char* sep)
+static int	count_words(const char *s, char *sep)
 {
 	size_t	count;
 
