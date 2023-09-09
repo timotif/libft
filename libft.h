@@ -6,7 +6,7 @@
 /*   By: tfregni <tfregni@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/28 14:02:27 by tfregni           #+#    #+#             */
-/*   Updated: 2023/06/07 14:31:47 by tfregni          ###   ########.fr       */
+/*   Updated: 2023/09/10 01:08:51 by tfregni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,6 +100,7 @@ int				ft_isfloat(char *n);
 char			**ft_split_by_sep(char const *s, char *sep);
 float			ft_fmax(float a, float b);
 float			ft_fmin(float a, float b);
+double			ft_dabs(double n);
 
 /*
  * Dynamic array that can automatically expand when necessary

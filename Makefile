@@ -6,7 +6,7 @@
 #    By: tfregni <tfregni@student.42berlin.de>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/06 16:50:23 by tfregni           #+#    #+#              #
-#    Updated: 2023/06/07 14:32:38 by tfregni          ###   ########.fr        #
+#    Updated: 2023/09/10 01:09:02 by tfregni          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ SRCS_EXTRA	=	$(addprefix ./ft_printf/, ft_printf.c parse_argument.c parse_flag.c
 				ft_strnjoin.c ft_free_str_arr.c ft_arrlen.c ft_strjoinnfree.c ft_strins.c \
 				ft_strtrunc.c ft_split_keep.c ft_is_escaped.c ft_skip_char.c \
 				ft_strnjoinchar.c ft_isspace.c ft_atollu.c ft_atof.c ft_isfloat.c \
-				ft_split_by_sep.c ft_fmax.c ft_fmin.c
+				ft_split_by_sep.c ft_fmax.c ft_fmin.c ft_dabs.c
 
 OBJS	= ${SRCS:.c=.o}
 
