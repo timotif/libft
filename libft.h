@@ -6,7 +6,7 @@
 /*   By: tfregni <tfregni@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/28 14:02:27 by tfregni           #+#    #+#             */
-/*   Updated: 2023/09/10 01:08:51 by tfregni          ###   ########.fr       */
+/*   Updated: 2023/09/22 21:42:17 by tfregni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdint.h>
 # include "./ft_printf/ft_printf.h"
 # include "./get_next_line/get_next_line.h"
+# include "./ft_lcg_random/ft_lcg_random.h"
 
 // Part1
 int				ft_isalpha(int a);
@@ -101,6 +102,9 @@ char			**ft_split_by_sep(char const *s, char *sep);
 float			ft_fmax(float a, float b);
 float			ft_fmin(float a, float b);
 double			ft_dabs(double n);
+// Pseudo-random number generator
+double			ft_lcg_random(uint64_t *lcg_state);
+void			ft_lcg_seed(uint64_t seed, uint64_t *lcg_state);
 
 /*
  * Dynamic array that can automatically expand when necessary
