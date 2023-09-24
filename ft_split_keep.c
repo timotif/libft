@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split_keep.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lde-ross <lde-ross@student.42berlin.de>    +#+  +:+       +#+        */
+/*   By: tfregni <tfregni@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 20:57:02 by lde-ross          #+#    #+#             */
-/*   Updated: 2023/04/28 12:21:38 by lde-ross         ###   ########.fr       */
+/*   Updated: 2023/09/24 08:53:41 by tfregni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ char	*keep_char(char *s, char c, int *i)
 	{
 		str = ft_calloc(2, sizeof(char));
 		str[0] = c;
-	}	
+	}
 	return (str);
 }
 
