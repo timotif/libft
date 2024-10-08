@@ -6,7 +6,7 @@
 /*   By: tfregni <tfregni@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/28 14:02:27 by tfregni           #+#    #+#             */
-/*   Updated: 2023/09/22 21:42:17 by tfregni          ###   ########.fr       */
+/*   Updated: 2024/10/08 09:23:06 by tfregni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdint.h>
-# include "./ft_printf/ft_printf.h"
-# include "./get_next_line/get_next_line.h"
-# include "./ft_lcg_random/ft_lcg_random.h"
+# include "ft_printf.h"
+# include "get_next_line.h"
+# include "ft_lcg_random.h"
 
 // Part1
 int				ft_isalpha(int a);
